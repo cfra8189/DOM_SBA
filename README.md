@@ -84,3 +84,8 @@ I Googled how to edit a post:
 - Hid the main form to show the edit form
 
 - Added function cancelEdit() to hide the edit form and how the main form
+
+My parameters are wrong for posts.forEach(), the event listener for the remove button, forgot to add the arrow function, forgot to add a parameter to removePost(), I misspelled an id and I forgot a comma in the object.
+
+
+

@@ -13,7 +13,7 @@ function savePosts() {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(posts))
 }
 
-function removePost(){
+function removePost(postIndex) {
     posts.splice(postIndex, 1)
     savePosts()
     showPosts()
@@ -22,7 +22,7 @@ function removePost(){
 function editPost(postIndex) {
     const postToEdit = posts[postIndex];
 
-    document.getElementById('editPostIdex').value = postIndex;
+    document.getElementById('editPostIndex').value = postIndex;
     document.getElementById('editPostTitle').value = postToEdit.title;
     document.getElementById('editPostContent').value = postToEdit.content;
 
@@ -39,14 +39,15 @@ function saveEdit(event) {
     const updatedTitle = document.getElementById('editPostTitle').value;
     const updatedContent = document.getElementById('editPostContent').value;
 
-    posts[index].title = updatedTitle;
-    posts[index].content = updatedContent;
+    posts[Number(index)].title = updatedTitle;
+    posts[Number(index)].content = updatedContent;
 
     savePosts();
     showPosts();
+    cancelEdit();
 }
 
-function cancelEdit(){
+function cancelEdit() {
     document.getElementById('postForm').style.display = 'block';
     editFormContainer.style.display = 'none';
     document.getElementById('editPostForm').reset();
@@ -56,20 +57,20 @@ function showPosts() {
     const container = document.getElementById('postsContainer')
     container.innerHTML = '';
 
-    posts.forEach(post => {
+    posts.forEach((post, index) => {
         const postItem = document.createElement('div');
         postItem.classList.add('post');
         postItem.innerHTML = `
         <h3>${post.title}</h3>
         <p>${post.content}</p>
-        <button class ="edit">Edit</button>
-        <button class ="remove">Remove</button>
         `;
+
+        
 
         const removeButton = document.createElement('button');
         removeButton.textContent = "Remove";
-        removeButton.classList.add = "remove";
-        removeButton.addEventListener('click', removePost(index));
+        removeButton.classList.add("remove");
+        removeButton.addEventListener('click', () => removePost(index));
 
         postItem.appendChild(removeButton);
 
@@ -78,14 +79,14 @@ function showPosts() {
 
 };
 
-function formSubmit(event){
+function formSubmit(event) {
     event.preventDefault();
 
     const titleInput = document.getElementById('postTitle')
     const contentInput = document.getElementById('postContent')
 
     const newPost = {
-        id: Date.now()
+        id: Date.now(),
         title: titleInput.value,
         content: contentInput.value
     };
@@ -94,13 +95,13 @@ function formSubmit(event){
     savePosts();
     showPosts();
 
-   
+
 }
 
- document.getElementById('postForm').addEventListener('submit', formSubmit)
- 
- document.getElementById('editPostForm').addEventListener('submit', saveEdit);
+document.getElementById('postForm').addEventListener('submit', formSubmit)
+
+document.getElementById('editPostForm').addEventListener('submit', saveEdit);
 document.getElementById('cancelEditButton').addEventListener('click', cancelEdit);
 
- getPosts();
- showPosts();
+getPosts();
+showPosts();
