@@ -46,6 +46,12 @@ function saveEdit(event) {
     showPosts();
 }
 
+function cancelEdit(){
+    document.getElementById('postForm').style.display = 'block';
+    editFormContainer.style.display = 'none';
+    document.getElementById('editPostForm').reset();
+}
+
 function showPosts() {
     const container = document.getElementById('postsContainer')
     container.innerHTML = '';
@@ -94,6 +100,7 @@ function formSubmit(event){
  document.getElementById('postForm').addEventListener('submit', formSubmit)
  
  document.getElementById('editPostForm').addEventListener('submit', saveEdit);
+document.getElementById('cancelEditButton').addEventListener('click', cancelEdit);
 
  getPosts();
  showPosts();

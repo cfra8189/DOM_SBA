@@ -82,3 +82,5 @@ I Googled how to edit a post:
 - Need function saveEdit(event) to save edits and the local variables to update the original post in the array | posts[index] will target the exact post in the array
 
 - Hid the main form to show the edit form
+
+- Added function cancelEdit() to hide the edit form and how the main form
