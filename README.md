@@ -78,3 +78,5 @@ I Googled how to edit a post:
 - Create function editPost(postIndex) to handle the start of an edit action and find the post object to edit based on its index
 
 - Add post values to variables 
+
+- Need function saveEdit(event) to save edits and the local variables to update the original post in the array | posts[index] will target the exact post in the array

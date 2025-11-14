@@ -27,7 +27,20 @@ function editPost(postIndex) {
     document.getElementById('editPostContent').value = postToEdit.content;
 }
 
+function saveEdit(event) {
+    event.preventDefault();
 
+
+    const index = document.getElementById('editPostIndex').value;
+    const updatedTitle = document.getElementById('editPostTitle').value;
+    const updatedContent = document.getElementById('editPostContent').value;
+
+    posts[index].title = updatedTitle;
+    posts[index].content = updatedContent;
+
+    savePosts();
+    showPosts();
+}
 
 function showPosts() {
     const container = document.getElementById('postsContainer')
