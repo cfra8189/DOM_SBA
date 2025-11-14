@@ -61,7 +61,7 @@ function showPosts() {
         const postItem = document.createElement('div');
         postItem.classList.add('post');
         postItem.innerHTML = `
-        <h3>${post.title}</h3>
+        <h3 class="center-align">${post.title}</h3>
         <p>${post.content}</p>
         `;
 

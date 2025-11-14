@@ -9,11 +9,20 @@ h2 {
     letter-spacing: 2px;
 }
 
+.card-content {
+    display: flex;
+    flex-direction: column;
+    
+}
+
 .card-title {
+    text-align: center;
     letter-spacing: 1px;
     font-weight: bold;
+    text-align: center;
 }
 
 .btn-spacer {
     margin: 10px; 
 }
+
