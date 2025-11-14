@@ -29,3 +29,5 @@ todoList.appendChild(newTask);
 - add container to HTML to display posts on screen
 
 - created function showPosts() to display posts and create new html for new posts that will be displayed.
+
+- added two inputs for the title and content on the html
