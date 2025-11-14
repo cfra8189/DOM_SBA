@@ -2,6 +2,8 @@ const STORAGE_KEY = 'postsData'
 
 let posts = [];
 
+const editFormContainer = document.getElementById('editFormContainer');
+
 function getPosts() {
     const storedPosts = localStorage.getItem(STORAGE_KEY)
     posts = JSON.parse(storedPosts) || [];

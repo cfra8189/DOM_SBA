@@ -72,3 +72,5 @@ I Googled how to edit a post:
 </div>
 
 - Replicate the form as the edit form element to HTML
+
+- add edit form container variable to global 
