@@ -21,3 +21,4 @@ newTask.innerHTML = 'New Task <button class="delete">Delete</button>';
 todoList.appendChild(newTask);
 });
 
+- Set up the localStorage to the posts and global variable to hold the array of post objects.
