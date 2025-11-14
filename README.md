@@ -74,3 +74,5 @@ I Googled how to edit a post:
 - Replicate the form as the edit form element to HTML
 
 - add edit form container variable to global 
+
+- Create function editPost(postIndex) to handle the start of an edit action and find the post object to edit based on its index.

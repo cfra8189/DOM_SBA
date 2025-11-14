@@ -19,6 +19,11 @@ function removePost(){
     showPosts()
 }
 
+function editPost(postIndex) {
+    const postToEdit = posts[postIndex];
+
+}
+
 function showPosts() {
     const container = document.getElementById('postsContainer')
     container.innerHTML = '';
