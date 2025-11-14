@@ -45,5 +45,10 @@ function formSubmit(event){
     savePosts();
     showPosts();
 
-    
+   
 }
+
+ document.getElementById('postForm').addEventListener('submit', formSubmit)
+ getPosts();
+ showPosts();
+ 

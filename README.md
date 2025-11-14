@@ -41,3 +41,5 @@ todoList.appendChild(newTask);
 - created the function to handle form submission that stores the local variables and creates a new object containing the title and content values
 
 Now the posts can be pushed to the posts array, then will get saved in the local storage and will be displayed.
+
+- add an event listener to listen for the form submission and getPosts() and showPosts() to load and display any existing posts
