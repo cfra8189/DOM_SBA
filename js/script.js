@@ -37,6 +37,7 @@ function formSubmit(event){
     const contentInput = document.getElementById('postContent')
 
     const newPost = {
+        id: Date.now()
         title: titleInput.value,
         content: contentInput.value
     };
@@ -51,4 +52,3 @@ function formSubmit(event){
  document.getElementById('postForm').addEventListener('submit', formSubmit)
  getPosts();
  showPosts();
- 
