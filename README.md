@@ -24,3 +24,4 @@ todoList.appendChild(newTask);
 - Set up the localStorage to the posts and global variable to hold the array of post objects.
 
 - added two functions to get and save the posts.
+- added || [] after JSON.parse(storedPosts) to return an empty array if nothing is stored to prevent errors.

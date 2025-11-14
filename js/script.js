@@ -4,7 +4,7 @@ let posts = [];
 
 function getPosts() {
     const storedPosts = localStorage.getItem(STORAGE_KEY)
-    posts = JSON.parse(storedPosts)
+    posts = JSON.parse(storedPosts) || [];
 }
 
 function savePosts(){
