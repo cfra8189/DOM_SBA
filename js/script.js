@@ -22,7 +22,12 @@ function removePost(){
 function editPost(postIndex) {
     const postToEdit = posts[postIndex];
 
+    document.getElementById('editPostIdex').value = postIndex;
+    document.getElementById('editPostTitle').value = postToEdit.title;
+    document.getElementById('editPostContent').value = postToEdit.content;
 }
+
+
 
 function showPosts() {
     const container = document.getElementById('postsContainer')

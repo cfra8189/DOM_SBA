@@ -75,4 +75,6 @@ I Googled how to edit a post:
 
 - add edit form container variable to global 
 
-- Create function editPost(postIndex) to handle the start of an edit action and find the post object to edit based on its index.
+- Create function editPost(postIndex) to handle the start of an edit action and find the post object to edit based on its index
+
+- Add post values to variables 
