@@ -29,3 +29,15 @@ function showPosts() {
     });
 
 };
+
+function formSubmit(event){
+    event.preventDefault();
+
+    const titleInput = document.getElementById('postTitle')
+    const contentInput = document.getElementById('postContent')
+
+    const newPost = {
+        title: titleInput.value,
+        content: contentInput.value
+    };
+}

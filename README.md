@@ -32,10 +32,10 @@ todoList.appendChild(newTask);
 
 - added two inputs for the title and content on the html
 
-- create the function to handle form submission
+
 
 - I had to built the form by adding labels, textfield, and submission button
 
 - Created the acutal display area on the screen with div id="postsContainer" and added class="form-container" to the div that's holding the form.
 
-- 
+- created the function to handle form submission that stores the local variables and creates a new object containing the title and content values
