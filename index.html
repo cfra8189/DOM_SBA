@@ -9,8 +9,14 @@
 </head>
 <body>
     <div id="postsContainer">
-        <input id="postTitle" type="text">
-        <input id="postContent" type="text">
+        <form id="postForm">
+            <label for="postTitle">Title:</label>
+            <input id="postTitle" type="text" required>
+            <label for="postContent">Content:</label>
+        <textarea id="postContent"></textarea>
+        <button id="publishPost" type="submit">Publish</button>
+        </form>
+        
     </div>
 </body>
 </html>

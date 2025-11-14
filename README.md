@@ -31,3 +31,7 @@ todoList.appendChild(newTask);
 - created function showPosts() to display posts and create new html for new posts that will be displayed.
 
 - added two inputs for the title and content on the html
+
+- create the function to handle form submission
+
+- I had to built the form by adding labels, textfield, and submission button
