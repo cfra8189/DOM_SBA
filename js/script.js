@@ -67,9 +67,9 @@ function showPosts() {
 
         const editButton = document.createElement('button');
         editButton.textContent = "Edit";
-        editButton.classList.add("edit", "waves-effect","waves-light", "btn", "yellow","darken-3");
+        editButton.classList.add("edit", "waves-effect", "waves-light", "btn", "yellow", "darken-3");
         editButton.addEventListener('click', () => editPost(index));
-        
+
 
         const removeButton = document.createElement('button');
         removeButton.textContent = "Remove";
