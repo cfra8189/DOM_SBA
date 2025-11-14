@@ -11,6 +11,12 @@ function savePosts() {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(posts))
 }
 
+function removePost(){
+    posts.splice(postIndex, 1)
+    savePosts()
+    showPosts()
+}
+
 function showPosts() {
     const container = document.getElementById('postsContainer')
     container.innerHTML = '';

@@ -44,7 +44,9 @@ Now the posts can be pushed to the posts array, then will get saved in the local
 
 - add an event listener to listen for the form submission and getPosts() and showPosts() to load and display any existing posts
 
-- add remove button functionality: removePosts()
 
 - added an id key to the newPost object: id: Date.now()
     
+- add remove button functionality: removePost()
+    - using postIndex to identify the position
+    - .splice() is like a pair of scissors on the array
