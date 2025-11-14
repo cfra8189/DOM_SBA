@@ -25,6 +25,10 @@ function editPost(postIndex) {
     document.getElementById('editPostIdex').value = postIndex;
     document.getElementById('editPostTitle').value = postToEdit.title;
     document.getElementById('editPostContent').value = postToEdit.content;
+
+    document.getElementById('postForm').style.display = 'none';
+    editFormContainer.style.display = 'block';
+
 }
 
 function saveEdit(event) {
@@ -88,5 +92,8 @@ function formSubmit(event){
 }
 
  document.getElementById('postForm').addEventListener('submit', formSubmit)
+ 
+ document.getElementById('editPostForm').addEventListener('submit', saveEdit);
+
  getPosts();
  showPosts();
