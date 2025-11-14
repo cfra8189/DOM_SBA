@@ -7,10 +7,25 @@ function getPosts() {
     posts = JSON.parse(storedPosts) || [];
 }
 
-function savePosts(){
+function savePosts() {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(posts))
 }
 
-function showPosts(){
+function showPosts() {
     const container = document.getElementById('postsContainer')
-}
+    container.innerHTML = '';
+
+    posts.forEach(post => {
+        const postItem = document.createElement('div');
+        postItem.classList.add('post');
+        postItem.innerHTML = `
+        <h3>${post.title}</h3>
+        <p>${post.content}</p>
+        <button class ="edit">Edit</button>
+        <button class ="remove">Remove</button>
+        `;
+
+        container.appendChild(postItem);
+    });
+
+};

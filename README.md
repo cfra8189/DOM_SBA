@@ -8,7 +8,7 @@ const todoList = document.getElementById('todo-list');
 const addTaskButton = document.getElementById('add-task');
 
 
-todoList.addEventListener('click', (e) => {
+t.addEventListener('click', (e) => {
 if (e.target.classList.contains('delete')) {
 e.target.parentElement.remove(); // Remove the task
 }
@@ -27,3 +27,5 @@ todoList.appendChild(newTask);
 - added || [] after JSON.parse(storedPosts) to return an empty array if nothing is stored to prevent errors.
 
 - add container to HTML to display posts on screen
+
+- created function showPosts() to display posts and create new html for new posts that will be displayed.
