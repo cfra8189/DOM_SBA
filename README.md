@@ -52,3 +52,23 @@ Now the posts can be pushed to the posts array, then will get saved in the local
     - .splice() is like a pair of scissors on the array
 
 - add the remove button functionality to the posts.forEach() block to create a new button that has the remove button functionality
+
+I Googled how to edit a post:
+
+<h2>Edit Post</h2>
+<!-- The edit form starts hidden via CSS or JS, here we make it visible for setup -->
+<div id="editFormContainer" style="display: none;">
+    <form id="editPostForm">
+        <input type="hidden" id="editPostIndex"> <!-- Hidden field to store the index of the post being edited -->
+        <label for="editPostTitle">Title:</label>
+        <input id="editPostTitle" type="text" required>
+        <label for="editPostContent">Content:</label>
+        <textarea id="editPostContent" rows="4"></textarea>
+        <button type="submit">Save Changes</button>
+        <button type="button" id="cancelEditButton">Cancel Edit</button>
+    </form>
+</div>
+
+</div>
+
+- Replicate the form as the edit form element to HTML

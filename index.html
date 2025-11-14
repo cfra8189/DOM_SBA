@@ -13,15 +13,27 @@
             <label for="postTitle">Title:</label>
             <input id="postTitle" type="text" required>
             <label for="postContent">Content:</label>
-        <textarea id="postContent"></textarea>
+        <textarea id="postContent" rows="4"></textarea>
         <button id="publishPost" type="submit">Publish</button>
+        </form>
+    </div>
+
+    <div id="editFormContainer" style="display: none;">
+        <form action="" id="editPostForm">
+            <input type="hidden" id="editPostIndex">
+            <label for="editPostTitle"Title:></label>
+            <input id="editPostTitle" type="text">
+            <label for="editPostContent">Content:</label>
+            <textarea id="editPostContent" rows="4"></textarea>
+            <button type="submit">SAVE</button>
+            <button id="cancelEditButton" type="button">CANCEL</button>
         </form>
     </div>
 
     <h2>POSTS</h2>
     <div id="postsContainer">
 
-        
+
     </div>
 
 
