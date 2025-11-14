@@ -16,11 +16,13 @@
     <title>LTL | Digital Dossier</title>
 </head>
 
-<body>
-
+<body class="container">
+<header class="row">
+    <h1 class="col s12 center-align">LTL | Digital Dossier</h1>
+</header>
     <div class="row">
-        <div class="formContainer col s12 m6">
-            <form id="postForm" class="card grey darken-1">
+        <div class="formContainer col s12 m6 offset-m3">
+            <form id="postForm" class="card purple darken-1">
                 <div class="card-content white-text">
                     <span class="card-title">Create New Post</span>
 
@@ -36,7 +38,7 @@
                 </div>
 
                 <div class="card-action">
-                    <button id="publishPost" class="waves-effect waves-light btn" type="submit">Publish</button>
+                    <button id="publishPost" class="waves-effect waves-light yellow darken-1 btn black-text" type="submit">Publish</button>
                 </div>
 
             </form>
@@ -82,9 +84,9 @@
 
 
 
-
-    <h2>My Posts</h2>
-    <div class="container" id="postsContainer">
+<div class="card black-text light-blue accent-3 "><h2 class="center-align">My Posts</h2>
+    <div class="row" id="postsContainer"></div>
+    
 
 
     </div>
