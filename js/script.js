@@ -31,6 +31,13 @@ function showPosts() {
         <button class ="remove">Remove</button>
         `;
 
+        const removeButton = document.createElement('button');
+        removeButton.textContent = "Remove";
+        removeButton.classList.add = "remove";
+        removeButton.addEventListener('click', removePost(index));
+
+        postItem.appendChild(removeButton);
+
         container.appendChild(postItem);
     });
 

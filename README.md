@@ -50,3 +50,5 @@ Now the posts can be pushed to the posts array, then will get saved in the local
 - add remove button functionality: removePost()
     - using postIndex to identify the position
     - .splice() is like a pair of scissors on the array
+
+- add the remove button functionality to the posts.forEach() block to create a new button that has the remove button functionality
