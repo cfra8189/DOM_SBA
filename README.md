@@ -35,3 +35,7 @@ todoList.appendChild(newTask);
 - create the function to handle form submission
 
 - I had to built the form by adding labels, textfield, and submission button
+
+- Created the acutal display area on the screen with div id="postsContainer" and added class="form-container" to the div that's holding the form.
+
+- 
