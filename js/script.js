@@ -65,7 +65,11 @@ function showPosts() {
         <p>${post.content}</p>
         `;
 
-        
+        const editButton = document.createElement('button');
+        editButton.textContent = "Edit";
+        editButton.classList.add("edit";
+        editButton.addEventListener('click', () => editPost(index));
+        )
 
         const removeButton = document.createElement('button');
         removeButton.textContent = "Remove";
@@ -73,6 +77,7 @@ function showPosts() {
         removeButton.addEventListener('click', () => removePost(index));
 
         postItem.appendChild(removeButton);
+        postItem.appendChild(editButton);
 
         container.appendChild(postItem);
     });
@@ -95,7 +100,8 @@ function formSubmit(event) {
     savePosts();
     showPosts();
 
-
+    titleInput.value = '';
+    contentInput.value = '';
 }
 
 document.getElementById('postForm').addEventListener('submit', formSubmit)

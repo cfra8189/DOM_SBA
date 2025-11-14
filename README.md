@@ -88,4 +88,6 @@ I Googled how to edit a post:
 My parameters are wrong for posts.forEach(), the event listener for the remove button, forgot to add the arrow function, forgot to add a parameter to removePost(), I misspelled an id and I forgot a comma in the object.
 
 
+- Removed buttons from forEach() and created dynamic buttons outside of postItem.innerHTMl and code to clear the form inputs
+
 
