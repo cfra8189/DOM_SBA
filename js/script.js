@@ -10,3 +10,7 @@ function getPosts() {
 function savePosts(){
     localStorage.setItem(STORAGE_KEY, JSON.stringify(posts))
 }
+
+function showPosts(){
+    const container = document.getElementById('postsContainer')
+}

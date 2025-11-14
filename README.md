@@ -25,3 +25,5 @@ todoList.appendChild(newTask);
 
 - added two functions to get and save the posts.
 - added || [] after JSON.parse(storedPosts) to return an empty array if nothing is stored to prevent errors.
+
+- add container to HTML to display posts on screen
