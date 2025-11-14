@@ -39,3 +39,5 @@ todoList.appendChild(newTask);
 - Created the acutal display area on the screen with div id="postsContainer" and added class="form-container" to the div that's holding the form.
 
 - created the function to handle form submission that stores the local variables and creates a new object containing the title and content values
+
+Now the posts can be pushed to the posts array, then will get saved in the local storage and will be displayed.

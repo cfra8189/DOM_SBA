@@ -40,4 +40,10 @@ function formSubmit(event){
         title: titleInput.value,
         content: contentInput.value
     };
+
+    posts.push(newPost);
+    savePosts();
+    showPosts();
+
+    
 }
