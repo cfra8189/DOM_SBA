@@ -55,3 +55,8 @@ hr {
     background-color: rgba(6, 9, 197, 0.438);
     border: none;
 }
+
+#editPostForm {
+    opacity: 0.9;
+    box-shadow: 20px 15px 6px 1px rgba(0, 0, 0, 0.3);
+}
