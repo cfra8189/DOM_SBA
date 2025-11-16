@@ -15,8 +15,7 @@ h2 {
 
 .card-content {
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;    
 }
 
 .card-title {
@@ -42,5 +41,16 @@ h2 {
 }
 
 .myPostsTitle {
+    padding: 35px;
     letter-spacing: -2px;
+}
+
+p {
+    margin-left: 10px;
+}
+
+hr {
+    height: 5px;
+    background-color: rgba(6, 9, 197, 0.438);
+    border: none;
 }
