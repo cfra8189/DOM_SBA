@@ -3,6 +3,7 @@ body {
   background-size: cover;
   color: white;
   font-family: monospace;
+  background-attachment: fixed;
 }
 
 h1 {
