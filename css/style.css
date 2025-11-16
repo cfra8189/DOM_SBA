@@ -5,6 +5,10 @@ body {
   font-family: monospace;
 }
 
+h1 {
+    letter-spacing: -2px;
+}
+
 h2 {
     letter-spacing: 2px;
 }
@@ -17,7 +21,7 @@ h2 {
 
 .card-title {
     text-align: center;
-    letter-spacing: 1px;
+    letter-spacing: -1px;
     font-weight: bold;
     text-align: center;
 }
@@ -34,4 +38,9 @@ h2 {
 #myPosts {
     opacity: 0.7;
     box-shadow: 20px 15px 6px 1px rgba(0, 0, 0, 0.3);
+    letter-spacing: -1px;
+}
+
+.myPostsTitle {
+    letter-spacing: -2px;
 }
